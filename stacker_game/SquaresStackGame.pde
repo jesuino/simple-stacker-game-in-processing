@@ -129,7 +129,6 @@ class SquaresStackGame {
             int leftColumn = x == 0 ? -1 : x - 1; 
             int rightColumn = (x == _COLUMNS - 1) ? -1 : x + 1;
             int line = y + 1;
-            println(x + ":" +y + " - " + leftColumn + " - " + rightColumn);
             if (leftColumn != -1 || rightColumn != -1) {
               fill(255, 0, 0, 50);
               rect(initialX + x * _W, initialY + line *_H, _W, _H);
